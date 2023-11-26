@@ -13,19 +13,19 @@ let mins=0;
 let timerId= null;
 
 
-// Event handling start of button 
+// Event handling of start button  
 startBtn.addEventListener('click', function(){
     if(timerId!== null){
        clearInterval(timerId);    }
    timerId= setInterval(startTimer,10);
 });
 
-// Event handling to stop the stopwatch 
+// Event handling of stop button 
 stopBtn.addEventListener('click', function(){
    clearInterval(timerId);
 });
 
-//  Event handling to reset the stopwatch 
+//  Event handling of reset button 
 resetBtn.addEventListener('click', function(){
     clearInterval(timerId);
     timerDisplay.innerHTML =`00 : 00 : 00`;
